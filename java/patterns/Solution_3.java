@@ -13,8 +13,9 @@
 // 1 2 3
 
 public class Solution_3{
-    public static void nTriangle(int n) {
+    public static void main(String[] args) {
         // Write your code here
+        int n = 10;
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
                 System.out.print(j+" ");

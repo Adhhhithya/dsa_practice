@@ -1,15 +1,122 @@
-# Executables
-*.exe
-*.out
-*.app
+# ===================================================================
+# General / Operating System Files
+# ===================================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
 
+# ===================================================================
+# VS Code Editor
+# ===================================================================
+# Ignore user-specific settings, history, and workspace files
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ===================================================================
+# C & C++ Specific
+# ===================================================================
 # Compiled Object files
 *.o
 *.obj
+*.slo
+*.lo
 
 # Precompiled Headers
 *.gch
 *.pch
 
+# Compiled static and dynamic libraries
+*.lib
+*.a
+*.la
+*.so
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*
+
 # Debug files
+*.d
 *.dSYM/
+*.pdb
+*.su
+
+# Build directories
+build/
+bin/
+
+# ===================================================================
+# Java Specific
+# ===================================================================
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven build directory
+target/
+
+# Gradle build directories
+.gradle
+build/
+
+# ===================================================================
+# Python Specific
+# ===================================================================
+# Compiled bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments - Very Important!
+.venv
+venv
+ENV
+env
+env.bak
+venv.bak

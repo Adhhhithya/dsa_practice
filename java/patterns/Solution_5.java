@@ -11,13 +11,20 @@
 // *
 
 public class Solution_5 {
+
+    // Method to print the seed pattern
     public static void seeding(int n) {
-        // Write your code here
-        for(int i=1;i<=n;i++){
-            for(int j=0;j<n-i+1;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < n - i + 1; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
+    }
+
+    // Main method to run the code in VS Code
+    public static void main(String[] args) {
+        int number = 5; // change this value to test with different input
+        seeding(number);
     }
 }
