@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": ["java"],
+    "java.problems.exclude": {
+        "**/*.java": ["missing-package-declaration"]
+    }
+}
