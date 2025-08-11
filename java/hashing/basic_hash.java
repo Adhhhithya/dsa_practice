@@ -18,6 +18,7 @@ public class basic_hash {
         System.out.print("Enter no. of queries : ");
         int q=sc.nextInt();
         while(q>0){
+            //fetch
             System.out.println("Enter a number for query :");
             int num = sc.nextInt();
             System.out.println("The number "+num+" is present "+hash[num]+" times in the array");
