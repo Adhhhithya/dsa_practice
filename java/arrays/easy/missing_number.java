@@ -43,7 +43,7 @@ public class missing_number {
         //Optimal Approach 2 : XOR
         int n = nums.length;
         int xor1=0;
-        for(int i=0;i<=n;i++){
+        for(int i=0;i<n-1;i++){
             xor1=xor1^i;
         }
         int xor2=0;
