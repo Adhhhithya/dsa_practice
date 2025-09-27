@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.*;
-public class longest_subarray_sum_k {
+public class longest_subarray_sum_k_positives {
     public static int getLongestSubarray(int arr[],int k){
         //Better Aproach : Prefix sum + hashing
         // int n = arr.length;
