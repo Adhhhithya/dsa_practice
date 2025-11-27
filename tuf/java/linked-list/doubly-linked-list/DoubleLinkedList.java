@@ -77,10 +77,78 @@ public class DoubleLinkedList {
         temp.back=null;
         return head;
     }
+
+    //delete the value of doubly linked list
+    private static void deleteNode(Node temp){
+        Node prev = temp.back;
+        Node front = temp.next;
+
+        if(front==null){
+            prev.next=null;
+            temp.back=null;
+        }
+        prev.next=front;
+        front.back=prev;
+        temp.next=null;
+        temp.back=null;
+
+    }
+
+    //insert node at head of doubly linked list
+    private static Node insertBeforeHead(Node head, int val){
+        Node newNode = new Node(val,head,null);
+        head.back=newNode;
+        return newNode;    }
+    
+    //insert node before tail of doubly linked list
+    private static Node insertBeforeTail(Node head,int val){
+        if(head.next==null){
+            return insertBeforeHead(head, val);
+        }
+        Node tail=head;
+        while(tail.next!=null){
+            tail=tail.next;
+        }
+        Node prev=tail.back;
+        Node newNode = new Node(val,tail,prev);
+        prev.next=newNode;
+        tail.back=newNode;
+        return head;
+    }
+
+    //insert val before Kth node of doubly linked list
+    private static Node insertBeforeKth(Node head,int k,int val){
+        if(k==1){
+            return insertBeforeHead(head, val);
+        }
+        Node temp=head;
+        int cnt=0;
+        while(temp!=null){
+            cnt++;
+            if(cnt==k) break;
+            temp=temp.next;
+        }
+        Node prev = temp.back;
+        Node newNode = new Node(val,temp,prev);
+        prev.next=newNode;
+        temp.back=newNode;
+        return head;
+
+    }
+
+    //insert val before the given node of doubly linked list
+    private static void insertBeforeNode(Node node,int val){
+        Node prev=node.back;
+        Node newNode= new Node(val,node,prev);
+        prev.next=newNode;
+        node.back=newNode;
+    }
+
+    
     public static void main(String[] args){
         int arr[]={12,5,6,8,9};
         Node head = convertArr2DLL(arr);
-        head = deleteKthNode(head,4);
+        insertBeforeNode(head.next.next ,76);
         for(Node temp = head; temp!=null; temp=temp.next){
             System.out.print(temp.data + " ");
         }
