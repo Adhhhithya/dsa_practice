@@ -16,6 +16,7 @@ public class stack_arr {
             System.out.println("Stack Overflow");
             return;
         }
+        System.out.println("Push :"+x);
         top=top+1;
         stackArray[top]=x;
     }
