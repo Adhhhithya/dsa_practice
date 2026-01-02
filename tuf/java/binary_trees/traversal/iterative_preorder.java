@@ -7,8 +7,8 @@ class Node{
         left=right=null;
     }
 }
-public class iterative_in_order {
-    public List<Integer> in_order(Node root){
+public class iterative_preorder {
+    public List<Integer> pre_order(Node root){
         List<Integer> preorder = new ArrayList<>();
         if(root==null){
             return preorder;
@@ -28,14 +28,14 @@ public class iterative_in_order {
         return preorder;
     }
     public static void main(String[] args){
-        iterative_in_order tree = new iterative_in_order();
+        iterative_preorder tree = new iterative_preorder();
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);
         root.left.left = new Node(4);
         root.left.right = new Node(5);
-        System.out.println("In-order Traversal of Binary Tree:");
-        List<Integer> result = tree.in_order(root);
+        System.out.println("Pre-order Traversal of Binary Tree:");
+        List<Integer> result = tree.pre_order(root);
         System.out.println(result);
     }
 }
