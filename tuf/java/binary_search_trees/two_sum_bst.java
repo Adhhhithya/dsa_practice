@@ -64,7 +64,7 @@ public class two_sum_bst {
         root.right.right = new Node(11);
         root.right.left.left = new Node(8);
 
-        int k = 16;
+        int k = 22;
         if(two_sum(root, k)){
             System.out.println("Found a pair with sum " + k);
         } else {
